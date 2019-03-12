@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import Isprite from '../Isprite/Isprite';
 
 @Component({
-    selector: 'app-demo-trend',
-    // templateUrl: './demo-trend.component.html',
-    // styleUrls: ['./demo-trend.component.scss']
+    selector: 'appIndex',
+    templateUrl: './IndexModule.html',
+    styleUrls: ['../../assets/css/index/appIndex.less']
 })
 class IndexModule extends Isprite {
     constructor() {
