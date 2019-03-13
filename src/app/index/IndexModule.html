@@ -6,6 +6,15 @@
       <div class="topType">选择分类</div>
       <div class="topHot">热门</div>
       <div class="topLine"></div>
+      <div class="typeList">
+        <div *ngFor="let item of musiceType">
+          <div>{{item.title}}</div>
+          <div *ngFor="let type of item.typeList;index as i">
+            <div>{{type}}</div>
+            <div *ngIf="i<item.typeList.length">|</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

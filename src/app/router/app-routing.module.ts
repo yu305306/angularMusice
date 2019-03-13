@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: 'IndexModule', component: IndexModule
   },
-  { path: '**', redirectTo: 'IndexModule', }
+  { path: '**', redirectTo: 'IndexModule', pathMatch: 'full' }
 ];
 
 @NgModule({

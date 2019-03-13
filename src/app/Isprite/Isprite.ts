@@ -5,6 +5,18 @@ class Isprite implements OnInit {
 
     }
     ngOnInit() {
+        this.init();
+        this.addEvent();
+    }
+
+    init() {
 
     }
-}export default Isprite;
+
+    addEvent() {
+
+    }
+
+
+
+} export default Isprite;
