@@ -1,0 +1,78 @@
+.indexListModule {
+    .musiceList {
+        width: 940px;
+        margin-top: 30px;
+        margin-left: 5px;
+        .typeLi {
+            float: left;
+            margin-left: 45px;
+            width: 140px;
+            height: 220px;
+            .picImg {
+                position: relative;
+                width: 140px;
+                height: 140px;
+                img {
+                    width: 140px;
+                    height: 140px;
+                }
+                .picBg {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 27px;
+                    background: rgba(0, 0, 0, .6);
+                    .musiceIcon {
+                        float: left;
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        width: 14px;
+                        height: 11px;
+                        background: url("../../img/index/icon0.png") no-repeat;
+                    }
+                    .musiceNum {
+                        float: left;
+                        margin-top: 7px;
+                        margin-left: 5px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #ccc;
+                    }
+                    .musicePlay {
+                        cursor: pointer;
+                        float: right;
+                        margin-top: 5px;
+                        margin-right: 5px;
+                        width: 16px;
+                        height: 17px;
+                        background: url("../../img/index/playIcon.png") no-repeat;
+                        &:hover{
+                            background-position: -16px;
+                        }
+                    }
+                }
+            }
+            .musiceTitle {
+                margin-top: 8px;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+            }
+            .musiceName {
+                margin-top: 3px;
+                font-size: 12px;
+                line-height: 12px;
+                color: #333;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+            }
+        }
+    }
+}

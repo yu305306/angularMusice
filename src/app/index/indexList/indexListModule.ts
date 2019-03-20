@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import Isprite from '../Isprite/Isprite';
-import { MusiceService } from '../service/musice.service';
+import Isprite from '../../Isprite/Isprite';
+import { MusiceService } from '../../service/musice.service';
 
 
 @Component({
     selector: 'indexListModule',
     templateUrl: './indexListModule.html',
-    styleUrls: ['../../assets/css/index/indexListModule.less'],
+    styleUrls: ['../../../assets/css/index/indexListModule.less'],
     providers: [MusiceService]
 })
 class indexListModule extends Isprite {
@@ -22,7 +22,15 @@ class indexListModule extends Isprite {
     }
 
     randomNum() {
-        return (10000 * Math.random()).toFixed(0);
+        let num: Number = 500000 * Math.random();
+        let numInt = parseInt(num.toString());
+        let str: string = '';
+        if (numInt > 10000) {
+            str = (numInt / 10000).toFixed(0) + "万";
+        } else {
+            str = numInt.toString();
+        }
+        return str;
     }
 
 } export default indexListModule;

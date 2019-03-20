@@ -1,0 +1,19 @@
+<div class="indexListModule">
+    <div class="musiceList">
+        <ng-container *ngFor="let item of musiceList;index as i">
+            <div class="typeLi">
+                <div class="picImg">
+                    <a router-link=""></a>
+                    <img [src]="item.img" />
+                    <div class="picBg">
+                        <div class="musiceIcon"></div>
+                        <div class="musiceNum">{{randomNum()}}</div>
+                        <div class="musicePlay"></div>
+                    </div>
+                </div>
+                <div class="musiceTitle">{{item.name}}</div>
+                <div class="musiceName">by  {{item.niceName}}</div>
+            </div>
+        </ng-container>
+    </div>
+</div>
