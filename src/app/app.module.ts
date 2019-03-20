@@ -8,6 +8,9 @@ import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
 import IndexModule from './index/IndexModule';
 import headerModule from './comom/header/headerModule';
+import indexListModule from './indexList/indexListModule';
+
+
 
 
 @NgModule({
@@ -16,7 +19,8 @@ import headerModule from './comom/header/headerModule';
     //soToDu
     IndexModule,
     //common
-    headerModule
+    headerModule,
+    indexListModule
   ],
   imports: [
     BrowserModule,

@@ -3,19 +3,31 @@
   <div class="indexCenter">
     <div class="indeTop">
       <div class="topTitle">华语</div>
-      <div class="topType">选择分类</div>
+      <div class="topType" (click)="typeShowBol=!typeShowBol">选择分类</div>
       <div class="topHot">热门</div>
       <div class="topLine"></div>
-      <div class="typeList">
-        <div *ngFor="let item of musiceType">
-          <div>{{item.title}}</div>
-          <div *ngFor="let type of item.typeList;index as i">
-            <div>{{type}}</div>
-            <div *ngIf="i<item.typeList.length">|</div>
+      <div class="typeList" *ngIf="typeShowBol">
+        <div class="typeTopIcon"></div>
+        <div class="typeLine"></div>
+        <div class="typeBg">
+          <div class="typeUl" *ngFor="let item of musiceType;index as img">
+            <div class="typeHead">
+              <div [ngClass]="'typeImg typeImg'+img"></div>
+              <div class="typeTitle">{{item.title}}</div>
+            </div>
+            <div class="typeContent">
+              <ng-container *ngFor="let type of item.typeList;index as i">
+                <div class="typeLi">
+                  <div class="typeItem" [ngClass]="img==0&&i==0?'select':''">{{type}}</div>
+                  <div class="typeOr" *ngIf="i<item.typeList.length-1">|</div>
+                </div>
+              </ng-container>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <indexListModule></indexListModule>
   </div>
 
 </div>

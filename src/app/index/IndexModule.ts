@@ -11,14 +11,15 @@ import { MusiceService } from '../service/musice.service';
 })
 class IndexModule extends Isprite {
     musiceType = new Array();
+    public typeShowBol: boolean = false;
     constructor(private musiceService: MusiceService) {
         super();
     }
     init() {
+        let _ts = this;
         this.musiceService.getMusiceType(function (res) {
-            this.musiceType = res.list;
+            _ts.musiceType = res.list;
         });
-        // this.musiceService.getMusice();
     }
 
 } export default IndexModule;
