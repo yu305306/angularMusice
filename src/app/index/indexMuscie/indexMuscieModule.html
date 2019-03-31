@@ -1,3 +1,36 @@
 <div class="indexMuscieModule">
-   
+    <div class="musiceBg"></div>
+    <div class="musiceLockBg">
+        <div class="lockBtn"></div>
+    </div>
+    <div class="musiceCenter">
+        <indexMuscieListModule></indexMuscieListModule>
+        <div class="musiceCtrl">
+            <div class="musicePre"></div>
+            <div class="musicePlay" *ngIf="playBol"></div>
+            <div class="musicePause" *ngIf="!playBol"></div>
+            <div class="musiceNext"></div>
+            <img class="musiceImg" src="http://p4.music.126.net/TYpyrwd87qIzqNiEsYw1vw==/109951163926410491.jpg?param=200y200" />
+            <div class="musiceBar">
+                <div class="musiceMsg">
+                    <div class="musiceTitle">辣鸡</div>
+                    <div class="musiceName">菜鸡</div>
+                </div>
+                <div class="barBg">
+                    <div class="barbufferLine"></div>
+                    <div class="barRedLine"></div>
+                    <div class="barBtn"></div>
+                </div>
+                <div class="barTime">
+                    <div class="nowT">00:33</div>
+                    <div class="totalTime">/02:33</div>
+                </div>
+            </div>
+            <div class="musiceList">
+                <div class="listNum">100</div>
+            </div>
+            <div class="musiceRule playOnce"></div>
+            <div class="soundBtn"></div>
+        </div>
+    </div>
 </div>

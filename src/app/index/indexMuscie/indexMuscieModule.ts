@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import Isprite from '../../Isprite/Isprite';
-
 
 @Component({
     selector: 'indexMuscieModule',
@@ -9,12 +8,14 @@ import Isprite from '../../Isprite/Isprite';
 })
 class indexListModule extends Isprite {
     musiceList = new Array();
+    private playBol: boolean = true;
     constructor() {
         super();
     }
     init() {
         let _ts = this;
-       
+        let ss: string;
+
     }
 
 } export default indexListModule;

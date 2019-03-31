@@ -21,9 +21,9 @@ class indexListModule extends Isprite {
         });
     }
 
-    randomNum() {
-        let num: Number = 500000 * Math.random();
-        let numInt = parseInt(num.toString());
+    randomNum(num) {
+        let numT =  num* Math.random();
+        let numInt = parseInt(numT.toString());
         let str: string = '';
         if (numInt > 10000) {
             str = (numInt / 10000).toFixed(0) + "万";

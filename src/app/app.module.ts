@@ -2,17 +2,18 @@ import { MusiceService } from './service/musice.service';
 import { Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, enableProdMode } from '@angular/core';
 
 import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
 import IndexModule from './index/IndexModule';
 import headerModule from './comom/header/headerModule';
 import indexListModule from './index/indexList/indexListModule';
+import indexMuscieModule from './index/indexMuscie/indexMuscieModule';
+import indexMuscieListModule from './index/indexMuscieList/indexMuscieListModule';
 
 
-
-
+enableProdMode()
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,9 @@ import indexListModule from './index/indexList/indexListModule';
     IndexModule,
     //common
     headerModule,
-    indexListModule
+    indexListModule,
+    indexMuscieModule,
+    indexMuscieListModule
   ],
   imports: [
     BrowserModule,
