@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+// import 'rxjs/add/operator/toPromise';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class MusiceService {
   constructor(private http: Http) {
   }
@@ -93,6 +92,11 @@ export class MusiceService {
     //   .subscribe(function (res) {
     //     fun(res)
     //   });
+  }
+
+  getBooks() {
+    const url = '/assets/musice.json';
+    return this.http.get(url);
   }
 
 }

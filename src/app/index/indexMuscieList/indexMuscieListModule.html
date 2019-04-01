@@ -16,14 +16,14 @@
                 你还没有添加任何歌曲
             </div>
             <div class="musiceUl">
-                <div class="musiceLi" *ngFor="let item of arr">
-                    <div class="playIcon"></div>
-                    <div class="musiceName">辣鸡辣鸡辣鸡</div>
-                    <div class="musiceAuthor">名字</div>
-                    <div class="musiceTotalTime">04:00</div>
+                <div class="musiceLi" (click)="musiceSelectPlay(item,num)" [ngClass]="selectNum==num?'musiceOver':''" *ngFor="let item of arr;let num=index">
+                    <div class="playIcon" [ngClass]="selectNum==num?'selectPlayIcon':''"></div>
+                    <div class="musiceName">{{item.title}}</div>
+                    <div class="musiceTotalTime">{{item.totalTime}}</div>
+                    <div class="musiceAuthor">{{item.nickName}}</div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="listleft">
         </div>
     </div>

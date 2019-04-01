@@ -7,7 +7,7 @@ import { MusiceService } from '../../service/musice.service';
     selector: 'indexListModule',
     templateUrl: './indexListModule.html',
     styleUrls: ['../../../assets/css/index/indexListModule.less'],
-    providers: [MusiceService]
+    // providers: [MusiceService]
 })
 class indexListModule extends Isprite {
     musiceList = new Array();
@@ -22,7 +22,7 @@ class indexListModule extends Isprite {
     }
 
     randomNum(num) {
-        let numT =  num* Math.random();
+        let numT = num * Math.random();
         let numInt = parseInt(numT.toString());
         let str: string = '';
         if (numInt > 10000) {
