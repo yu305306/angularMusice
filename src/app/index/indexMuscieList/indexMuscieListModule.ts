@@ -36,6 +36,10 @@ class indexMuscieListModule extends Isprite {
         // console.log("laji")
     }
 
+    clearMusice() {
+        this.arr.length = 0;
+    }
+
 
 
 } export default indexMuscieListModule;
