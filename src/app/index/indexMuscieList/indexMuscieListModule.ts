@@ -23,7 +23,7 @@ class indexMuscieListModule extends Isprite {
         let _ts = this;
         this.musiceService.getBooks().subscribe(
             function (res) {
-                let listData: Object = res.json();
+                let listData = res.json();
                 // 数据格式请看log
                 _ts.arr = listData.musice;
             }, error => {

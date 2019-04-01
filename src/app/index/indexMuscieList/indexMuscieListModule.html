@@ -12,10 +12,10 @@
     </div>
     <div class="listBody">
         <div class="listRight">
-            <div class="noneList">
+            <div class="noneList" *ngIf="arr==null||arr.length==0">
                 你还没有添加任何歌曲
             </div>
-            <div class="musiceUl">
+            <div class="musiceUl" *ngIf="arr!=null&&arr.length>0">
                 <div class="musiceLi" (click)="musiceSelectPlay(item,num)" [ngClass]="selectNum==num?'musiceOver':''" *ngFor="let item of arr;let num=index">
                     <div class="playIcon" [ngClass]="selectNum==num?'selectPlayIcon':''"></div>
                     <div class="musiceName">{{item.title}}</div>
