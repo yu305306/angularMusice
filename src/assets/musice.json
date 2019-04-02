@@ -3,38 +3,40 @@
     {
       "img": "https://img3.doubanio.com/view/site/large/public/f92ffd2d4a123ee.jpg",
       "title": "不开的唇",
-      "nickName":"赵雷",
-      "totalTime":"03:30",
+      "nickName": "赵雷",
+      "totalTime": "03:30",
+      "lyric": "/assets/soundLyric/l0.json",
       "url": "http://mr1.doubanio.com/4ae71fd075c5a2cb89b49d071ff92955/0/fm/song/p2237766_128k.mp3"
     },
     {
       "img": "https://img1.doubanio.com/view/site/large/public/5c22b3559b72d3a.jpg",
       "title": "最好的未来（乔木楠&刘若英）",
-      "nickName":"大乔小乔",
-      "totalTime":"03:30",
+      "nickName": "大乔小乔",
+      "totalTime": "03:30",
+      "lyric": "/assets/soundLyric/l1.json",
       "url": "http://mr1.doubanio.com/f15f611373753d301606174d96b3cd91/0/fm/song/p2237920_128k.mp3"
     },
     {
       "img": "https://img3.doubanio.com/view/subject/m/public/s4235212.jpg",
       "title": "在冬天和奶奶一起晒太阳",
-      "nickName":"赵照",
-      "totalTime":"03:30",
+      "nickName": "赵照",
+      "totalTime": "03:30",
+      "lyric": "/assets/soundLyric/l0.json",
       "url": "http://mr1.doubanio.com/2805b37107abcb83f756a0b38b117772/1/fm/song/p1590112_128k.mp3"
     },
     {
       "img": "https://img3.doubanio.com/view/site/large/public/06f2e949552cb62.jpg",
       "title": "时间里的（合辑版）",
-      "nickName":"马頔",
-      "totalTime":"03:30",
+      "nickName": "马頔",
+      "totalTime": "03:30",
       "url": "http://mr3.doubanio.com/ad6ee22d522accd32a0ab80b69f967ea/0/fm/song/p1832834_128k.mp3"
     },
     {
       "img": "https://img3.doubanio.com/view/site/large/public/c1d4f973c962ce1.jpg",
       "title": "安和桥",
-      "nickName":"宋冬野",
-      "totalTime":"03:30",
+      "nickName": "宋冬野",
+      "totalTime": "03:30",
       "url": "http://mr3.doubanio.com/7a194befbd5f39efcf782dfc0f9aa462/1/fm/song/p1780404_128k.mp3"
     }
-    
   ]
 }

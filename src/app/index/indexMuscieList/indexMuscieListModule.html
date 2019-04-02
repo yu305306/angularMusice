@@ -7,7 +7,7 @@
                 <div class="clearBtn"></div>清除</div>
         </div>
         <div class="listRight">
-            <div class="musiceTitle">大辣鸡</div>
+            <div class="musiceTitle">{{selectTitle}}</div>
         </div>
         <div class="closeBtn"></div>
     </div>
@@ -26,6 +26,8 @@
             </div>
         </div>
         <div class="listleft">
+            <div class="soundLriy" *ngFor="let item of soundLriy;let num=index;">{{item.str}}</div>
         </div>
+        <video id="ctrlMusice" autoplay="true" src="{{video_url}}"></video>
     </div>
 </div>

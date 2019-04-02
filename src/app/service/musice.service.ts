@@ -99,4 +99,8 @@ export class MusiceService {
     return this.http.get(url);
   }
 
+  loadData(url) {
+    return this.http.get(url);
+  }
+
 }
