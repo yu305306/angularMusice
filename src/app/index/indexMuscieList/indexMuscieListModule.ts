@@ -1,6 +1,7 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import Isprite from '../../Isprite/Isprite';
 import { MusiceService } from '../../service/musice.service';
+import BScroll from 'better-scroll';
 
 @Component({
     selector: 'indexMuscieListModule',
@@ -8,12 +9,14 @@ import { MusiceService } from '../../service/musice.service';
     styleUrls: ['../../../assets/css/index/indexMuscieListModule.less'],
 })
 class indexMuscieListModule extends Isprite {
+    @ViewChild("scroll") scroll: ElementRef;
     private arr: Array<any>;
-
     private soundLriy: Array<any> = [];
     private selectNum: Number = 0;
     private video_url: string = '';
     private selectTitle: string = '';
+    private scrollF: BScroll;
+
     constructor(private musiceService: MusiceService, private el: ElementRef) {
         super();
     }
@@ -22,15 +25,30 @@ class indexMuscieListModule extends Isprite {
         let ss: string;
         _ts.getMusice();
         _ts.addEventVideo();
+
+    }
+
+    scrollFun() {
+        let _ts = this;
+        if (_ts.scrollF == null) {
+            _ts.scrollF = new BScroll(this.scroll.nativeElement, {
+                scrollY: true,
+            });
+        }else {
+            _ts.scrollF.refresh();
+        }
     }
 
     addEventVideo() {
         let _ts = this;
         let video = _ts.el.nativeElement.querySelector('#ctrlMusice');
-        video.onended = function(){
+        video.onended = function () {
             console.log('结束');
         }
-        // video.addEventListener("timeupdate")
+
+        video.addEventListener("timeupdate", function (e) {
+            
+        })
         // console.log(video);
 
     }
@@ -79,6 +97,7 @@ class indexMuscieListModule extends Isprite {
                     }
                 }
                 _ts.soundLriy = lArr;
+                setTimeout(_ts.scrollFun.bind(_ts), 1000);
             }, error => {
                 console.log(error);
             });

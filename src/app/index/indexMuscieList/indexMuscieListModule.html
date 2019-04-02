@@ -25,8 +25,13 @@
                 </div>
             </div>
         </div>
-        <div class="listleft">
-            <div class="soundLriy" *ngFor="let item of soundLriy;let num=index;">{{item.str}}</div>
+        <div class="listleft" #scroll>
+            <div class="listUl">
+                <ng-container *ngFor="let item of soundLriy;let num=index;">
+                    <div class="soundLriy">{{item.str}}</div>
+                </ng-container>
+            </div>
+
         </div>
         <video id="ctrlMusice" autoplay="true" src="{{video_url}}"></video>
     </div>
