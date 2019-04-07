@@ -1,0 +1,44 @@
+{
+  "musice": [
+    {
+      "img": "http://p4.music.126.net/fQ1MmpTdsMkrAQZYSKtFpg==/109951163885807545.jpg?param=200y200",
+      "title": "不开的唇",
+      "nickName": "赵雷",
+      "totalTime": "03:53",
+      "lyric": "/assets/soundLyric/l0.json",
+      "url": "http://mr1.doubanio.com/4ae71fd075c5a2cb89b49d071ff92955/0/fm/song/p2237766_128k.mp3"
+    },
+    {
+      "img": "http://p4.music.126.net/81ugNN34jC5eaC4ykpyLUg==/109951163916173754.jpg?param=200y200",
+      "title": "最好的未来（乔木楠&刘若英）",
+      "nickName": "大乔小乔",
+      "totalTime": "04:13",
+      "lyric": "/assets/soundLyric/l1.json",
+      "url": "http://mr1.doubanio.com/f15f611373753d301606174d96b3cd91/0/fm/song/p2237920_128k.mp3"
+    },
+    {
+      "img": "http://p3.music.126.net/zut6erKXs6_CGNN2_Oaidg==/109951163941397528.jpg?param=200y200",
+      "title": "在冬天和奶奶一起晒太阳",
+      "nickName": "赵照",
+      "totalTime": "04:36",
+      "lyric": "/assets/soundLyric/l2.json",
+      "url": "http://mr1.doubanio.com/2805b37107abcb83f756a0b38b117772/1/fm/song/p1590112_128k.mp3"
+    },
+    {
+      "img": "http://p4.music.126.net/-AT1GZSL8saI1Dsa88YkQg==/109951163865720551.jpg?param=200y200",
+      "title": "时间里的（合辑版）",
+      "nickName": "马頔",
+      "totalTime": "05:05",
+      "lyric": "/assets/soundLyric/l3.json",
+      "url": "http://mr3.doubanio.com/ad6ee22d522accd32a0ab80b69f967ea/0/fm/song/p1832834_128k.mp3"
+    },
+    {
+      "img": "http://p4.music.126.net/QkAiaiXkFETfkYM5WMyjCw==/109951163945101131.jpg?param=200y200",
+      "title": "夜空中最亮的星",
+      "nickName": "逃跑计划",
+      "totalTime": "04:12",
+      "lyric": "/assets/soundLyric/l4.json",
+      "url": "http://mr1.doubanio.com/c18b1421c9a31a4683187c00c5d48c40/0/fm/song/p2369960_128k.mp4"
+    }
+  ]
+}

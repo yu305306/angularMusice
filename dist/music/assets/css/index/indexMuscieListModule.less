@@ -1,0 +1,191 @@
+.indexMuscieListModule {
+    width: 990px;
+    height: 300px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: 47px;
+    left: 5px;
+    background: #222;
+    overflow: hidden;
+
+    .listHead {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 990px;
+        height: 40px;
+        background: rgba(0, 0, 0, .8);
+
+        .listLeft {
+            float: left;
+            border-top-left-radius: 10px;
+            width: 560px;
+            height: 40px;
+
+            .listT {
+                float: left;
+                font-size: 14px;
+                margin-left: 20px;
+                color: #FFF;
+                font-weight: bold;
+                line-height: 40px;
+            }
+
+            .listCleanBtn {
+                cursor: pointer;
+                float: right;
+                font-size: 14px;
+                color: #FFF;
+                line-height: 40px;
+
+                .clearBtn {
+                    float: left;
+                    width: 13px;
+                    height: 15px;
+                    margin-right: 5px;
+                    margin-top: 13px;
+                    background: url("../../img/index/musice/clearBtn.png");
+                }
+            }
+
+            .listLine {
+                float: right;
+                height: 30px;
+                width: 1px;
+                margin-left: 10px;
+                background: rgba(102, 102, 102,.6);
+            }
+        }
+
+        .listRight {
+            float: left;
+            border-top-right-radius: 10px;
+            width: 430px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+
+    .listBody {
+        width: 990px;
+        height: 260px;
+
+        .listRight {
+            float: left;
+            width: 560px;
+            height: 260px;
+            overflow: hidden;
+
+            .noneList {
+                width: 100%;
+                text-align: center;
+                line-height: 260px;
+                font-size: 12px;
+                color: #aaa;
+            }
+
+            .musiceUl {
+                position: relative;
+                width: 560px;
+
+                .musiceLi {
+                    cursor: pointer;
+                    float: left;
+                    width: 100%;
+                    height: 28px;
+                    color: #666;
+                    font-size: 12px;
+
+                    .playIcon {
+                        float: left;
+                        margin-top: 9px;
+                        margin-left: 10px;
+                        width: 10px;
+                        height: 13px;
+                    }
+
+                    .selectPlayIcon {
+                        background: url("../../img/index/musice/playBtn.png");
+                    }
+
+                    .musiceName {
+                        float: left;
+                        width: 266px;
+                        height: 28px;
+                        line-height: 28px;
+
+                        margin-left: 10px;
+                    }
+
+                    .musiceAuthor {
+                        float: right;
+                        width: 80px;
+                        height: 28px;
+                        line-height: 28px;
+                        margin-right: 10px;
+                    }
+
+                    .musiceTotalTime {
+                        float: right;
+                        width: 40px;
+                        height: 28px;
+                        line-height: 28px;
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+                .musiceOver {
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        .listleft {
+            float: left;
+            width: 430px;
+            height: 224px;
+            overflow: hidden;
+            margin-top: 20px;
+            .listUl {
+                width: 390px;
+                overflow: hidden;
+                padding-left: 20px;
+                padding-right: 20px;
+                .soundLriy {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 32px;
+                    color: #989898;
+                    font-size: 12px;
+                }
+                .soundLriyPlay{
+                    color: #FFF;
+                    font-size: 14px;
+                }
+            }
+
+
+            .playLine {
+                font-size: 14px;
+                color: #FFF;
+            }
+        }
+
+        .ctrlMusice {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            bottom: -100px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "musice": [
+    {
+      "img": "http://p1.music.126.net/uGHAirYHBE1G-6_8nTn6wQ==/2421124604387504.jpg?param=130y130",
+      "title": "当你孤单你会想起谁",
+      "nickName": "赵学而",
+      "totalTime": "04:14",
+      "lyric": "/assets/soundLyric/l5.json",
+      "url": "http://mr3.doubanio.com/5487af66d3aa8b9332aa86a10eab3be1/0/fm/song/p2070859_128k.mp4"
+    },
+    {
+      "img": "http://p2.music.126.net/bSued5VZEvTRpPzbiNZvUQ==/3322724140183973.jpg?param=130y130",
+      "title": "自由的飞",
+      "nickName": "爽子",
+      "totalTime": "04:27",
+      "lyric": "/assets/soundLyric/l6.json",
+      "url": "http://mr3.doubanio.com/c2f849082ab068409be4663b0277a9bf/0/fm/song/p1833546_128k.mp3"
+    }
+  ]
+}

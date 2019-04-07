@@ -1,0 +1,240 @@
+.indexMuscieModule {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 1200px;
+    .musiceBg {
+        float: left;
+        width: 100%;
+        height: 52px;
+        margin-left: -67px;
+        margin-top: 15px;
+        background: url("../../img/index/musice/musiceBg.png") bottom;
+    }
+    .musiceLockBg {
+        float: right;
+        width: 67px;
+        height: 67px;
+        background: url("../../img/index/musice/musiceLockBg.png") bottom;
+        .lockBtn {
+            position: absolute;
+            margin-left: 18px;
+            margin-top: 8px;
+            width: 14px;
+            height: 13px;
+            background: url("../../img/index/musice/lockOutBtn.png");
+            cursor: pointer;
+            &:hover {
+                background-position: -14px;
+            }
+        }
+        .unlockBtn {
+            margin-left: 18px;
+            margin-top: 8px;
+            position: absolute;
+            width: 10px;
+            height: 13px;
+            background: url("../../img/index/musice/lockBtn.png");
+            cursor: pointer;
+            &:hover {
+                background-position: -10px;
+            }
+        }
+    }
+    .musiceCenter {
+        position: relative;
+        width: 980px;
+        height: 45px;
+        margin: 0 auto;
+        margin-top: 22px;
+        .musiceCtrl {
+            position: absolute;
+            width: 980px;
+            .musicePre {
+                cursor: pointer;
+                float: left;
+                width: 24px;
+                height: 26px;
+                margin-top: 8px;
+                margin-right: 10px;
+                background: url("../../img/index/musice/musicePre.png");
+                &:hover {
+                    background-position: -24px;
+                }
+            }
+            .musicePlay {
+                cursor: pointer;
+                float: left;
+                margin-top: 4px;
+                margin-right: 10px;
+                width: 32px;
+                height: 34px;
+                background: url("../../img/index/musice/musicePlay.png");
+                &:hover {
+                    background-position: -32px;
+                }
+            }
+            .musicePause {
+                cursor: pointer;
+                float: left;
+                margin-top: 4px;
+                margin-right: 10px;
+                width: 32px;
+                height: 34px;
+                background: url("../../img/index/musice/musicePause.png");
+                &:hover {
+                    background-position: -32px;
+                }
+            }
+            .musiceNext {
+                cursor: pointer;
+                float: left;
+                margin-top: 8px;
+                margin-right: 30px;
+                width: 24px;
+                height: 26px;
+                background: url("../../img/index/musice/musiceNext.png");
+                &:hover {
+                    background-position: -24px;
+                }
+            }
+            .musiceImg {
+                float: left;
+                margin-top: 5px;
+                margin-right: 25px;
+                width: 34px;
+                height: 34px;
+                border-radius: 5px;
+            }
+            .musiceBar {
+                float: left;
+                width: 600px;
+                .musiceMsg {
+                    float: left;
+                    width: 100%;
+                    height: 24px;
+                    .musiceTitle {
+                        float: left;
+                        line-height: 24px;
+                        font-size: 12px;
+                        color: #FFF;
+                        margin-right: 20px;
+                    }
+                    .musiceName {
+                        float: left;
+                        font-size: 12px;
+                        color: #999;
+                        line-height: 24px;
+                    }
+                }
+                .barBg {
+                    position: relative;
+                    cursor: pointer;
+                    float: left;
+                    width: 490px;
+                    height: 10px;
+                    background: rgba(0, 0, 0, .5);
+                    border-radius: 10px;
+                    .barbufferLine {
+                        position: absolute;
+                        z-index: 1;
+                        background: rgba(0, 0, 0, .5);
+                        width: 0px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+                    .barRedLine {
+                        position: absolute;
+                        z-index: 2;
+                        background: rgba(255, 0, 0, 0.8);
+                        width: 0px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+                    .barBtn {
+                        position: absolute;
+                        cursor: pointer;
+                        margin-top: -4px;
+                        margin-left: -8px;
+                        z-index: 3;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: #FFF;
+                    }
+                }
+                .barTime {
+                    float: left;
+                    margin-left: 15px;
+                    .nowT {
+                        float: left;
+                        color: #a1a1a1;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                    .totalTime {
+                        float: left;
+                        color: #797979;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+            .soundBtn {
+                float: right;
+                cursor: pointer;
+                margin-left: 15px;
+                margin-top: 10px;
+                width: 20px;
+                height: 23px;
+                background: url("../../img/index/musice/soundBtn.png");
+            }
+            .musiceList {
+                float: right;
+                cursor: pointer;
+                margin-left: 15px;
+                margin-top: 10px;
+                cursor: pointer;
+                width: 55px;
+                height: 25px;
+                font-size: 12px;
+                line-height: 20px;
+                padding-left: 18px;
+                width: 37px;
+                text-align: center;
+                color: #666;
+                background: url("../../img/index/musice/musiceList.png");
+            }
+            .musiceRule {
+                float: right;
+                cursor: pointer;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            .playOnce {
+                width: 20px;
+                height: 24px;
+                background: url("../../img/index/musice/playOnce.png");
+                &:hover {
+                    background-position: -20px;
+                }
+            }
+            .playAuto {
+                width: 20px;
+                height: 24px;
+                background: url("../../img/index/musice/playAuto.png");
+                &:hover {
+                    background-position: -20px;
+                }
+            }
+            .playOne {
+                width: 20px;
+                height: 24px;
+                background: url("../../img/index/musice/playOne.png");
+                &:hover {
+                    background-position: -20px;
+                }
+            }
+        }
+    }
+}
