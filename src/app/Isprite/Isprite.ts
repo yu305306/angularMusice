@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 
-class Isprite implements OnInit {
+export class Isprite implements OnInit {
     constructor() {
 
     }
@@ -19,4 +19,4 @@ class Isprite implements OnInit {
 
 
 
-} export default Isprite;
+};

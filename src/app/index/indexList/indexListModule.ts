@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import Isprite from '../../Isprite/Isprite';
+import { Isprite } from '../../Isprite/Isprite';
 import { MusiceService } from '../../service/musice.service';
-
+import { Store } from '@ngrx/store';
+import * as musiceAction from 'src/app/ngrx/musiceAction';
 
 @Component({
     selector: 'indexListModule',
@@ -9,9 +10,9 @@ import { MusiceService } from '../../service/musice.service';
     styleUrls: ['../../../assets/css/index/indexListModule.less'],
     // providers: [MusiceService]
 })
-class indexListModule extends Isprite {
+export class indexListModule extends Isprite {
     musiceList = new Array();
-    constructor(private musiceService: MusiceService) {
+    constructor(private musiceService: MusiceService, private store: Store<any>) {
         super();
     }
     init() {
@@ -33,4 +34,12 @@ class indexListModule extends Isprite {
         return str;
     }
 
-} export default indexListModule;
+    clickMusice(num: number) {
+        let str: string = (num % 2).toFixed(0);
+        this.store.dispatch({
+            type: musiceAction.CLICK_MUSICE,
+            clickList: str
+        });
+    }
+
+};

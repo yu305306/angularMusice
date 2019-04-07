@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Observable, of } from 'rxjs';
 // import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class MusiceService {
+  public videoState: string = '';
   constructor(private http: Http) {
   }
 
@@ -94,9 +96,17 @@ export class MusiceService {
     //   });
   }
 
-  getBooks() {
-    const url = '/assets/musice.json';
+  getBooks(str: string) {
+    const url = '/assets/musice' + str + '.json';
     return this.http.get(url);
+  }
+
+  set playState(value) {
+    this.videoState = value;
+  }
+
+  getPlayState(): string {
+    return this.videoState;
   }
 
   loadData(url) {

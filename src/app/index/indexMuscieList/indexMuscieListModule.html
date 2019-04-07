@@ -4,7 +4,8 @@
             <div class="listT">播放列表</div>
             <div class="listLine"></div>
             <div class="listCleanBtn" (click)="clearMusice()">
-                <div class="clearBtn"></div>清除</div>
+                <div class="clearBtn"></div>清除
+            </div>
         </div>
         <div class="listRight">
             <div class="musiceTitle">{{selectTitle}}</div>
@@ -17,7 +18,8 @@
                 你还没有添加任何歌曲
             </div>
             <div class="musiceUl" *ngIf="arr!=null&&arr.length>0">
-                <div class="musiceLi" (click)="musiceSelectPlay(item,num)" [ngClass]="selectNum==num?'musiceOver':''" *ngFor="let item of arr;let num=index">
+                <div class="musiceLi" (click)="musiceSelectPlay(item,num)" [ngClass]="selectNum==num?'musiceOver':''"
+                    *ngFor="let item of arr;let num=index">
                     <div class="playIcon" [ngClass]="selectNum==num?'selectPlayIcon':''"></div>
                     <div class="musiceName">{{item.title}}</div>
                     <div class="musiceTotalTime">{{item.totalTime}}</div>
@@ -28,7 +30,7 @@
         <div class="listleft" #scroll>
             <div class="listUl">
                 <ng-container *ngFor="let item of soundLriy;let num=index;">
-                    <div class="soundLriy">{{item.str}}</div>
+                    <div class="soundLriy" [ngClass]="['soundLriy'+num]">{{item.str}}</div>
                 </ng-container>
             </div>
 

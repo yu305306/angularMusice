@@ -4,17 +4,17 @@
         <div class="lockBtn"></div>
     </div>
     <div class="musiceCenter">
-        <indexMuscieListModule></indexMuscieListModule>
+        <indexMuscieListModule [hidden]="musiceBol" (musiceDataEvent)="musiceDataEvent($event)"></indexMuscieListModule>
         <div class="musiceCtrl">
-            <div class="musicePre"></div>
-            <div class="musicePlay" *ngIf="playBol"></div>
-            <div class="musicePause" *ngIf="!playBol"></div>
-            <div class="musiceNext"></div>
-            <img class="musiceImg" src="http://p4.music.126.net/TYpyrwd87qIzqNiEsYw1vw==/109951163926410491.jpg?param=200y200" />
+            <div class="musicePre" (click)="playPre()"></div>
+            <div class="musicePlay" *ngIf="playBol" (click)="playVideo()"></div>
+            <div class="musicePause" *ngIf="!playBol" (click)="playVideo()"></div>
+            <div class="musiceNext" (click)="playNext()"></div>
+            <img class="musiceImg" [src]="musiceImg" />
             <div class="musiceBar">
                 <div class="musiceMsg">
-                    <div class="musiceTitle">辣鸡</div>
-                    <div class="musiceName">菜鸡</div>
+                    <div class="musiceTitle">{{musiceTitle}}</div>
+                    <div class="musiceName">{{musiceName}}</div>
                 </div>
                 <div class="barBg">
                     <div class="barbufferLine"></div>
@@ -22,12 +22,12 @@
                     <div class="barBtn"></div>
                 </div>
                 <div class="barTime">
-                    <div class="nowT">00:33</div>
-                    <div class="totalTime">/02:33</div>
+                    <div class="nowT">{{nowTimw}}</div>
+                    <div class="totalTime">/{{durationTime}}</div>
                 </div>
             </div>
-            <div class="musiceList">
-                <div class="listNum">100</div>
+            <div class="musiceList" (click)="listClick()">
+                <div class="listNum">{{musiceListNum}}</div>
             </div>
             <div class="musiceRule playOnce"></div>
             <div class="soundBtn"></div>

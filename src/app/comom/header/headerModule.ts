@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import Isprite from '../../Isprite/Isprite';
+import { Isprite } from '../../Isprite/Isprite';
 
 @Component({
     selector: 'headerModule',
     templateUrl: './headerModule.html',
     styleUrls: ['../../../assets/css/common/headerModule.less', '../../../assets/css/common/common.less']
 })
-class headerModule extends Isprite {
+export class headerModule extends Isprite {
     selectPlay: boolean = true;
+    selectNum: number = 0;
     constructor() {
         super();
     }
 
 
-} export default headerModule;
+};
