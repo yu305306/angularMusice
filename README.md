@@ -2,26 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
-## Development server
+运行 ng serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+打包 ng build --prod --aot
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+dist 目录是在本地服务器才能正常打开。 使用router 跳转
+本地服务器 使用 全局服务器  anywhere  插件。 npm install anywhere -g
 
-## Build
+$ anywhere
+// or with port
+$ anywhere -p 8000
+// or start it but silent(don't open browser)
+$ anywhere -s
+// or with hostname
+$ anywhere -h localhost -p 8888
+// or with folder
+$ anywhere -d ~/git/anywhere
+// or enable html5 history
+$ anywhere -f /index.html
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
