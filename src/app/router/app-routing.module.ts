@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexModule } from '../index/IndexModule';
+import { playListModule } from '../playList/playListModule';
+
 
 const routes: Routes = [
   {
-    path: 'IndexModule', component: IndexModule
+    path: 'index', component: IndexModule
   },
-  { path: '**', redirectTo: 'IndexModule', pathMatch: 'full' }
+  {
+    path: 'playList', component: playListModule
+  },
+  { path: '**', redirectTo: 'playList', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,15 +1,15 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { Isprite } from '../../Isprite/Isprite';
-import { MusiceService } from '../../service/musice.service';
-import { indexMuscieListModule } from '../indexMuscieList/indexMuscieListModule';
+import { MusiceService } from '../service/musice.service';
+import { indexMuscieListModule } from './indexMuscieList/indexMuscieListModule';
 
 import { Store } from '@ngrx/store';
 import * as musiceAction from 'src/app/ngrx/musiceAction';
+import { Isprite } from '../Isprite/Isprite';
 
 @Component({
     selector: 'indexMuscieModule',
     templateUrl: './indexMuscieModule.html',
-    styleUrls: ['../../../assets/css/index/indexMuscieModule.less'],
+    styleUrls: ['../../assets/css/index/indexMuscieModule.less'],
 })
 export class indexMuscieModule extends Isprite {
     musiceList = new Array();
