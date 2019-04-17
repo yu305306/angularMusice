@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'playList', component: playListModule
   },
-  { path: '**', redirectTo: 'playList', pathMatch: 'full' }
+  { path: '**', redirectTo: 'index', pathMatch: 'full' }
 ];
 
 @NgModule({

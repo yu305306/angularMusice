@@ -13,8 +13,8 @@
             <img class="musiceImg" [src]="musiceImg" />
             <div class="musiceBar">
                 <div class="musiceMsg">
-                    <div class="musiceTitle">{{musiceTitle}}</div>
-                    <div class="musiceName">{{musiceName}}</div>
+                    <div class="musiceTitle" [innerHTML]="musiceTitle"></div>
+                    <div class="musiceName" [innerHTML]="musiceName"></div>
                 </div>
                 <div class="barBg">
                     <div class="barbufferLine"></div>
@@ -22,12 +22,13 @@
                     <div class="barBtn"></div>
                 </div>
                 <div class="barTime">
-                    <div class="nowT">{{nowTimw}}</div>
-                    <div class="totalTime">/{{durationTime}}</div>
+                    <div class="nowT" [innerHTML]="nowTimw"></div>
+                    <div class="totalTime">/</div>
+                    <div class="totalTime" [innerHTML]="durationTime">/{{durationTime}}</div>
                 </div>
             </div>
             <div class="musiceList" (click)="listClick()">
-                <div class="listNum">{{musiceListNum}}</div>
+                <div class="listNum" [innerHTML]="musiceListNum|number"></div>
             </div>
             <div class="musiceRule playOnce"></div>
             <div class="soundBtn"></div>

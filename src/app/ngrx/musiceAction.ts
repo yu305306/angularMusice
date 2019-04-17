@@ -6,6 +6,8 @@ export const PLAY_PRE_VIDEO = 'PLAY_PRE_VIDEO';
 export const PLAY_NEXT_VIDEO = 'PLAY_NEXT_VIDEO';
 
 export const CLICK_MUSICE = 'CLICK_MUSICE';
+export const CLICK_MUSICE_LIST = 'CLICK_MUSICE_LIST';
+export const ADD_MUSICE = 'ADD_MUSICE';
 
 // import { Action } from '@ngrx/store';
 

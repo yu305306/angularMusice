@@ -109,6 +109,8 @@ export class indexMuscieListModule extends Isprite {
             if (state != null)
                 if (state.videoStatus != null) {
                     _ts.videoCtrl(state.videoStatus);
+                } else if (state.addList != null) {
+                    _ts.addList(state.addList);
                 } else {
                     _ts.getMusice(state.clickList);
                 }
@@ -153,6 +155,38 @@ export class indexMuscieListModule extends Isprite {
             }, error => {
                 console.log(error);
             });
+    }
+
+    addList(obj: any) {
+        let _ts = this;
+        if (Array.isArray(obj)) {
+            if (_ts.arr == null || _ts.arr.length == 0) {
+                _ts.arr = obj;
+            } else {
+                obj.forEach(function (value) {
+                    let bol: boolean = true;
+                    _ts.arr.forEach(function (item) {
+                        if (value.title == item.title) {
+                            bol = false;
+                        }
+                    });
+                    if (bol) {
+                        _ts.arr.push(value);
+                    }
+                });
+            }
+            _ts.musiceDataEvent.emit({ status: 'msg', data: _ts.arr[0], len: _ts.arr.length });
+        } else {
+            if (_ts.arr != null && _ts.arr.length > 0) {
+                _ts.arr.forEach(function (item) {
+                    if (obj.title == item.title) {
+                        return;
+                    }
+                });
+            }
+            _ts.arr.push(obj);
+            _ts.musiceDataEvent.emit({ status: 'msg', data: obj, len: _ts.arr.length });
+        }
     }
 
     musiceIndex(bol: boolean = true) {

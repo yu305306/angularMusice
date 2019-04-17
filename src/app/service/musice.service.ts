@@ -101,6 +101,11 @@ export class MusiceService {
     return this.http.get(url);
   }
 
+  getPlayList() {
+    const url = '/assets/playList.json';
+    return this.http.get(url);
+  }
+
   set playState(value) {
     this.videoState = value;
   }

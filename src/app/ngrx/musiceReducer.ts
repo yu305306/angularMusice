@@ -15,6 +15,10 @@ export function musiceReducer(state: musice, action: Action): any {
             return action;
         case musiceAction.CLICK_MUSICE:
             return action;
+        case musiceAction.CLICK_MUSICE_LIST:
+            return action;
+        case musiceAction.ADD_MUSICE:
+            return action;
         default:
             return state;
     }

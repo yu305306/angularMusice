@@ -3,8 +3,9 @@
         <ng-container *ngFor="let item of musiceList;let num=index">
             <div class="typeLi">
                 <div class="picImg">
-                    <a router-link=""></a>
-                    <img [src]="item.img" />
+                    <a routerLink="/playList">
+                        <img [src]="item.img" />
+                    </a>
                     <div class="picBg">
                         <div class="musiceIcon"></div>
                         <div class="musiceNum">10087</div>
