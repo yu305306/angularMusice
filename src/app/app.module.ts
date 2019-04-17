@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import { IndexModule } from './index/IndexModule';
 import { headerModule } from './comom/header/headerModule';
 import { indexListModule } from './index/indexList/indexListModule';
-import { indexMuscieModule } from './index/indexMuscie/indexMuscieModule';
-import { indexMuscieListModule } from './index/indexMuscieList/indexMuscieListModule';
+import { indexMuscieModule } from './musice/indexMuscieModule';
+import { indexMuscieListModule } from './musice/indexMuscieList/indexMuscieListModule';
+// import { indexMuscieListModule } from './index/indexMuscieList/indexMuscieListModule';
 
+import { playListModule } from './playList/playListModule';
 
 // ngrx
 import { StoreModule } from '@ngrx/store';
@@ -29,6 +31,7 @@ enableProdMode()
     indexListModule,
     indexMuscieModule,
     indexMuscieListModule,
+    playListModule
   ],
   imports: [
     FormsModule,

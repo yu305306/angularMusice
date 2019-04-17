@@ -1,0 +1,273 @@
+.playListModule {
+    position: relative;
+    width: 980px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+    overflow: hidden;
+    .playTop {
+        width: 710px;
+        margin-top: 47px;
+        float: left;
+        .coverLeft {
+            margin-left: 40px;
+            float: left;
+            width: 208px;
+            height: 208px;
+            border: 1px solid #d3d3d3;
+            .coverImg {
+                width: 200px;
+                height: 200px;
+                margin-top: 4px;
+                margin-left: 4px;
+            }
+        }
+        .musiceRight {
+            float: left;
+            margin-left: 22px;
+            width: 410px;
+            overflow: hidden;
+            .title {
+                float: left;
+                width: 100%;
+                color: #000000;
+                line-height: 24px;
+                font-size: 20px;
+            }
+            .headDiv {
+                float: left;
+                width: 100%;
+                margin-top: 12px;
+                .headImg {
+                    float: left;
+                    width: 35px;
+                    height: 35px;
+                }
+                .headName {
+                    margin-left: 10px;
+                    float: left;
+                    font-size: 12px;
+                    color: #0c73c2;
+                    line-height: 35px;
+                }
+            }
+            .playListBtn {
+                cursor: pointer;
+                float: left;
+                margin-top: 20px;
+                line-height: 31px;
+                color: #fff;
+                text-align: center;
+                border-radius: 4px;
+                width: 80px;
+                height: 31px;
+                background: url("../../img/playList/playBtnBlue.png");
+            }
+            .tagList {
+                float: left;
+                width: 100%;
+                margin-top: 25px;
+                .tagT {
+                    float: left;
+                    font-size: 12px;
+                    color: #666;
+                    line-height: 22px;
+                }
+                .tag {
+                    float: left;
+                    margin-right: 5px;
+                    border: 1px solid rgba(51, 51, 51, .3);
+                    padding-left: 6px;
+                    padding-right: 6px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 12px;
+                    border-radius: 10px;
+                    background: rgba(211, 211, 211, .2);
+                    color: #777;
+                    text-align: center;
+                }
+            }
+            .desDiv {
+                float: left;
+                width: 100%;
+                margin-top: 5px;
+                .desPD {
+                    float: left;
+                    width: 100%;
+                    max-height: 54px;
+                    overflow: hidden;
+                    .desP {
+                        line-height: 18px;
+                        color: #666;
+                        font-size: 12px;
+                    }
+                }
+                .desPN{
+                    max-height: none;
+                }
+
+                .desOpen {
+                    cursor: pointer;
+                    float: right;
+                    color: #0c73c2;
+                    font-size: 12px;
+                }
+                .desIcon {
+                    float: right;
+                    margin-left: 5px;
+                    margin-top: 4px;
+                    width: 11px;
+                    height: 8px;
+                    background: url("../../img/playList/desIcon.png") no-repeat;
+                }
+                .desHide {
+                    background-position: -11px;
+                }
+            }
+        }
+    }
+    .playBottom {
+        float: left;
+        width: 710px;
+        margin-top: 28px;
+        .playP {
+            float: left;
+            width: 640px;
+            height: 28px;
+            margin-left: 40px;
+            .playT {
+                float: left;
+                font-size: 20px;
+                line-height: 28px;
+                color: #333;
+            }
+            .musiceNum {
+                float: left;
+                line-height: 12px;
+                font-size: 12px;
+                color: #666;
+                margin-top: 12px;
+                margin-left: 10px;
+            }
+            .playNum {
+                float: right;
+                line-height: 12px;
+                margin-top: 12px;
+                font-size: 12px;
+                color: #666;
+                text-align: left;
+            }
+        }
+        .musiceList {
+            float: left;
+            width: 640px;
+            margin-left: 40px;
+            margin-top: 3px;
+            border-right: 1px solid #d3d3d3;
+            border-left: 1px solid #d3d3d3;
+            border-bottom:  1px solid #d3d3d3;
+            border-top: 2px solid #c20c0c;
+            .listTopBg {
+                float: left;
+                width: 640px;
+                height: 38px;
+                background: url("../../img/playList/listTopBg.png");
+                .none {
+                    float: left;
+                    width: 65px;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 12px;
+                    padding-left: 10px;
+                    color: #666;
+                }
+                .listName {
+                    width: 228px;
+                }
+                .listT {
+                    width: 100px;
+                }
+                .listS {
+                    width: 78px;
+                }
+                .listTP {}
+                .listTopLine {
+                    float: left;
+                    width: 2px;
+                    height: 34px;
+                    background: url("../../img/playList/listTopLine.png");
+                }
+            }
+            .listMusice {
+                float: left;
+                width: 640px;
+                ul {
+                    width: 640px;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        float: left;
+                        list-style-type: none;
+                        width: 640px;
+                        height: 30px;
+                        .listLeft {
+                            float: left;
+                            padding-left: 10px;
+                            font-size: 12px;
+                            line-height: 30px;
+                            color: #333;
+                        }
+                        .listNum {
+                            width: 65px;
+                            .playBtn {
+                                float: right;
+                                margin-top: 5px;
+                                margin-right: 5px;
+                                cursor: pointer;
+                                width: 17px;
+                                height: 17px;
+                                background: url("../../img/playList/playClick.png");
+                                &:hover {
+                                    background-position: -17px;
+                                }
+                            }
+                            .playIng {
+                                cursor: pointer;
+                                float: right;
+                                margin-top: 5px;
+                                margin-right: 5px;
+                                width: 17px;
+                                height: 17px;
+                                background: url("../../img/playList/playClick.png");
+                                background-position: -34px;
+                            }
+                        }
+                        .listTitle {
+                            cursor: pointer;
+                            width: 231px;
+                        }
+                        .listTime {
+                            width: 103px;
+                        }
+                        .listAuthor {
+                            width: 80px;
+                        }
+                        .listT {
+                            width: 78px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .playRightLine {
+        float: left;
+        min-height: 600px;
+        height: 100%;
+        width: 1px;
+        background: #d3d3d3;
+    }
+}

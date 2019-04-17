@@ -1,0 +1,65 @@
+<headerModule></headerModule>
+<div class="playListModule">
+    <div class="playTop" *ngIf="playListData!=null">
+        <div class="coverLeft">
+            <img class="coverImg" [src]="playListData.img" alt="" />
+        </div>
+        <div class="musiceRight">
+            <div class="title">{{playListData.title}}</div>
+            <div class="headDiv">
+                <img class="headImg" [src]="playListData.headImg" />
+                <div class="headName">{{playListData.nickName}}</div>
+            </div>
+            <div class="playListBtn" (click)="playList(playListData.list)">播放</div>
+            <div class="tagList">
+                <div class="tagT">标签：</div>
+                <div class="tag" *ngFor="let item of playListData.tag;">{{item}}</div>
+            </div>
+            <div class="desDiv">
+                <div class="desPD" [ngClass]="logBol?'':'desPN'">
+                    <div class="desP" [innerHTML]="playListData.log"></div>
+                </div>
+                <div *ngIf="logLogBol" class="desIcon" [ngClass]="logBol?'':'desHide'"></div>
+                <div *ngIf="logLogBol" (click)="showLog()" class="desOpen" [innerHTML]="logP">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="playBottom" *ngIf="playListData!=null">
+        <div class="playP">
+            <div class="playT">歌曲列表</div>
+            <div class="musiceNum">48首歌</div>
+            <div class="playNum">播放：
+                <font style="color: #c20c0c;">10086</font> 次</div>
+
+        </div>
+        <div class="musiceList">
+            <div class="listTopBg">
+                <div class="none"></div>
+                <div class="listTopLine"></div>
+                <div class="listName none">歌曲标题</div>
+                <div class="listTopLine"></div>
+                <div class="listT none">时长</div>
+                <div class="listTopLine"></div>
+                <div class="listS none">歌手</div>
+                <div class="listTopLine"></div>
+                <div class="listTP none">专辑</div>
+            </div>
+            <div class="listMusice">
+                <ul>
+                    <li *ngFor="let item of playListData.list;let num=index;">
+                        <div class="listNum listLeft">{{num+1}}
+                            <div class="playBtn" (click)="playFun(item)"></div>
+                        </div>
+                        <div class="listTitle listLeft" (click)="playFun(item)">{{item.title}}</div>
+                        <div class="listTime listLeft">{{item.totalTime}}</div>
+                        <div class="listAuthor listLeft">{{item.nickName}}</div>
+                        <div class="listT listLeft">{{item.nickName}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="playRightLine"></div>
+</div>

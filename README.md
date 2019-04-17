@@ -8,6 +8,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 此demo 是仿照2019-04-01网易云PC网页的播放，只制作部分功能，跑了播放功能 和 歌词滚动。
 音频是扒 douban.fm 的，歌词部分是扒网易云的。
+做了2个小页面练手。
+点击头部小按钮 歌单是返回 index 的列表页
+点击列表的图片跳去歌单列表显示页
+
 
 dist 目录是在本地服务器才能正常打开。 使用router 跳转
 本地服务器 使用 全局服务器  anywhere  插件。 npm install anywhere -g
